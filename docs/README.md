@@ -1,4 +1,4 @@
-# chronos
+# <i style="font-size:0.70em;" class="material-icons">timer</i> chronos 
 > A date time manipulation library
 
 ## Install
