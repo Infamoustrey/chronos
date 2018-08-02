@@ -2,9 +2,10 @@
   "name": "@infamoustrey/chronos",
   "version": "1.0.0",
   "description": "A date-time manipulation library",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava",
+    "build": "webpack --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Infamoustrey/chronos#readme",
   "devDependencies": {
-    "ava": "^0.25.0"
+    "ava": "^0.25.0",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
   }
 }
