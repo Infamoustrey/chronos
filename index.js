@@ -31,6 +31,29 @@ class Chronos {
     }
 
     /*
+    *   Subtract a unit of time to the current date
+    *   @param {number} - Amount of the Type of Time to Subtract
+    *   @param {string} - The Type of Time to Subtract
+    *   @returns {Chronos} - Chronos Instance
+    */
+    sub(amt, type){
+
+        switch (type){
+            case 'month':
+                this.master.setMonth(this.master.getMonth()-amt)
+                break
+            case 'year':
+                this.master.setFullYear(this.master.getFullYear()-amt)
+                break
+            case 'day':
+                this.master.setDate(this.master.getDate()-amt)
+                break
+        }
+
+        return this;
+    }
+
+    /*
     *   Returns date as utc encoded string
     */
     utc(){ return this.master.toUTCString() }
