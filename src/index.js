@@ -1,6 +1,14 @@
 
+/*
+*   Created By Trey Foster
+*/
+
 class Chronos {
 
+    /*
+    *   Initialize the Chronos Object
+    *   @param {string} - Date String to map to object
+    */
     constructor(input){
 
         if(input == undefined) this.master = new Date();
